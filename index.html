@@ -3,55 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Ejercicio Grid</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>InstaFront</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="logo">
-        <img
-          src="img/logo-DM.png"
-          alt="Logo DM"
-        />
+
+    <!-- HEADER -->
+    <header class="header">
+      <span class="header__logo">InstaFront</span>
+      <input class="header__search" type="text" placeholder="Buscador..." />
+      <img class="header__avatar" src="img/fotoPerfil.png" alt="avatar" />
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- COLUMNA PRINCIPAL -->
+      <div class="feed">
+
+        <!-- HISTORIAS -->
+        <section class="history">
+          <img src="img/fotoPerfil.png" alt="historia 1" />
+          <img src="img/fotoPerfil.png" alt="historia 2" />
+          <img src="img/fotoPerfil.png" alt="historia 3" />
+          <img src="img/fotoPerfil.png" alt="historia 4" />
+          <img src="img/fotoPerfil.png" alt="historia 5" />
+          <img src="img/fotoPerfil.png" alt="historia 6" />
+          <img src="img/fotoPerfil.png" alt="historia 7" />
+        </section>
+
+        <!-- POST -->
+        <article class="post">
+          <div class="post__header">
+            <img class="post__avatar" src="img/fotoPerfil.png" alt="avatar" />
+            <span class="post__username">Abril González</span>
+            <span class="post__menu">···</span>
+          </div>
+          <img class="post__image" src="img/fotoPerfil2.png" alt="post" />
+          <div class="iconos">
+            <i class="far fa-heart"></i>
+            <i class="far fa-comment"></i>
+            <i class="far fa-paper-plane"></i>
+            <i class="far fa-smile"></i>
+         </div>
+          <p class="post__likes">Les gusta a lulipringless y otras personas</p>
+          <p class="post__comments-link">Ver los 3.672 comentarios</p>
+          <p class="post__comment"><strong>Gabriela Munich</strong> Hola! que placer verte en frontend!!</p>
+          <p class="post__comment"><strong>Jonathan Gonzalez</strong> Te estabamos esperando!! Vamooh!</p>
+        </article>
+
       </div>
-      <h3>🤯Rompecabezas!</h3>
-      <div class="exercice">
-        <!--Lado Completo-->
-        <div class="exercice-complete">
-          <img
-            src="img/final.jpg"
-            alt="rompecabezas completo"
-          />
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar__profile">
+          <img src="img/fotoPerfil.png" alt="perfil" />
+          <div>
+            <p class="sidebar__username">Abril.gonzalez53</p>
+            <p class="sidebar__sublabel">ABRIL ★</p>
+          </div>
+          <a href="#" class="sidebar__change">Cambiar</a>
         </div>
-        <!--Lado Incompleto-->
-        <div class="excercice-incomplete">
-          <div class="grid-one">
-            <img
-              src="img/1.jpg"
-              alt="image 1"
-            />
+
+        <p class="sidebar__suggestions-title">Sugerencias para ti</p>
+
+        <div class="sidebar__suggestion">
+          <img src="img/fotoPerfil.png" alt="sugerencia 1" />
+          <div>
+            <p class="sidebar__sug-name">Jonathan Gonzalez</p>
           </div>
-          <div class="grid-two">
-            <img
-              src="img/2.jpg"
-              alt="image 2"
-            />
-          </div>
-          <div class="grid-three">
-            <img
-              src="img/3.jpg"
-              alt="image 3"
-            />
-          </div>
-          <div class="grid-four">
-            <img
-              src="img/4.jpg"
-              alt="image 4"
-            />
-          </div>
+          <a href="#" class="sidebar__follow">Seguir</a>
         </div>
-      </div>
-    </div>
+
+        <div class="sidebar__suggestion">
+          <img src="img/fotoPerfil.png" alt="sugerencia 2" />
+          <div>
+            <p class="sidebar__sug-name">Gabriela Munich</p>
+          </div>
+          <a href="#" class="sidebar__follow">Seguir</a>
+        </div>
+      </aside>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>Todos los derechos reservados a <strong>Valdez Melani Agustina</strong></p>
+    </footer>
+
   </body>
 </html>
